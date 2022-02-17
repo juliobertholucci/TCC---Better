@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Better</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="https://kit.fontawesome.com/893cab398d.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <link rel="icon" type="image/png" href="Imagens/better.jpg" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Montserrat-ExtraBold';
+            src: url('Fonts/Montserrat-ExtraBold.ttf') format('truetype');
+        }
+
+
+        * {
+            box-sizing: border-box
+        }
+
+        .principal {
+            width: 100%;
+            height: auto;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu {
+            min-height: 15vh;
+            width: 100%;
+            background-color: white;
+        }
+
+        .item {
+            height: 15vh;
+            color: black;
+        }
+
+            .item > img {
+                width: 50%;
+                height: 170%;
+                margin-top: -30px;
+            }
+
+        .borderitem {
+            border-left: 2px solid black;
+            height: 9vh;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+            .borderitem:hover {
+                cursor: pointer;
+                border-color: yellow;
+            }
+
+        .hide {
+            font-size: 0;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .borderitem {
+                border-bottom: 2px solid black;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="principal">
+
+
+            <div class="menu row" style="font-weight: bold;">
+
+                <a href="Default.aspx" class="col-md-3 col-md text-center item">
+                    <img src="/Imagens/better.png" />
+                </a>
+                <a href="SFeminino.aspx" class="col-md-2 item borderitem">Salão
+                    <br />
+                    Feminino
+                </a>
+                <a href="SMasculino.aspx" class="col-md-2 item borderitem">Salão
+                    <br />
+                    Masculino </a>
+                <a href="Parceiros.aspx" class="col-md-2 item borderitem">Parceiros
+                    <br />
+                    <p class="hide"></p>
+
+                </a>
+                <asp:LinkButton ID="LinkButton1" Visible="false" runat="server" CssClass="col-md-3 item borderitem" OnClick="LinkButton1_Click">Sair!</asp:LinkButton>
+                <br />
+                <p class="hide">asdasd</p>
+
+                <a id="comecar" runat="server" href="Cadastro.aspx" class="col-md-3 item borderitem">Começar!
+                    <br />
+                    <p class="hide">asdasd</p>
+
+
+                </a>
+
+            </div>
+
+
+
+
+            <div class="container-fluid">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>

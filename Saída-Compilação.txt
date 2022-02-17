@@ -1,0 +1,11 @@
+﻿A solução não está salva. Salve sua solução antes de gerenciar os pacotes NuGet.
+------ Compilação iniciada: Projeto: TCC(1), Configuração: Debug Any CPU ------
+Aviso: Não é possível atualizar a referência de atualização automática "microsoft.codedom.providers.dotnetcompilerplatform.dll". Não é possível localizar o assembly "D:\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll".
+Validando Site
+Criando o diretório '/AreaCliente/'.
+Criando o diretório '/AreaEmpresa/'.
+Criando o diretório '/'.
+
+D:\TCC\Login.aspx.cs(34,24): aviso CS0219: The variable 'tipo_do_cabra' is assigned but its value is never used
+Validação Concluída
+========== Compilação: 1 com êxito ou atualizados, 0 com falha, 0 ignorados ==========
